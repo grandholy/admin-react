@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+/* App.css */
+.danger {
+    border-color: red !important; /* Red border for invalid input */
+    background-color: #ffe6e6; /* Light red background */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.success {
+    border-color: #4CAF50 !important; /* Green border for valid input */
+    background-color: #e8f5e9; /* Light green background */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.caution {
+    border-color: orange !important; /* Orange border for caution */
+    background-color: #fff3cd; /* Light yellow background */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.primary {
+    border-color: #4e73df !important; /* Primary color */
+    background-color: #f0f4ff; /* Light primary background */
 }
 
-.App-link {
-  color: #61dafb;
+.secondary {
+    border-color: #36b9cc !important; /* Secondary color */
+    background-color: #e8f9f4; /* Light secondary background */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.warning {
+    border-color: #f6c23e !important; /* Warning color */
+    background-color: #fff3cd; /* Light warning background */
+}
+
+.info {
+    border-color: #5a8dee !important; /* Info color */
+    background-color: #e7f1ff; /* Light info background */
+}
+
+.light {
+    border-color: #f8f9fc !important; /* Light color */
+    background-color: #f8f9fc; /* Light background */
+}
+
+.dark {
+    border-color: #343a40 !important; /* Dark color */
+    background-color: #d6d8db; /* Light dark background */
 }

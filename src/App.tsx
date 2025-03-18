@@ -15,6 +15,7 @@ import LoginForm from './pages/forms/LoginForm';
 import RegisterForm from './pages/forms/RegisterForm';
 import AdvancedForm from './pages/forms/AdvancedForm';
 import StepForm from './pages/forms/StepForm';
+import FormElements from './pages/forms/FormElements';
 
 // Chart pages
 import ChartPage from './pages/charts/Charts';
@@ -26,6 +27,8 @@ import NotificationDemo from './pages/notifications/Notifications';
 import NotFoundPage from './pages/utilities/NotFound';
 import ServerErrorPage from './pages/utilities/ServerError';
 import ComingSoonPage from './pages/utilities/ComingSoon';
+
+import './App.css'; 
 
 const App: React.FC = () => {
   return (
@@ -44,6 +47,7 @@ const App: React.FC = () => {
               
               {/* Form routes */}
               <Route path="forms">
+                <Route path="form-elements" element={<FormElements />} />
                 <Route path="login" element={<LoginForm />} />
                 <Route path="register" element={<RegisterForm />} />
                 <Route path="advanced" element={<AdvancedForm />} />

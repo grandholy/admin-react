@@ -1,5 +1,4 @@
 import initializeDatabase from './db/init';
-import * as server from './server';
 
 // Initialize the database and start the server
 const startApp = async () => {

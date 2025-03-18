@@ -101,6 +101,10 @@ const Sidebar: React.FC<SidebarProps> = ({ drawerVisible, setDrawerVisible }) =>
       label: 'Forms',
       children: [
         {
+          key: '7-0',
+          label: <Link to="/forms/form-elements">Form Elements</Link>,
+        },
+        {
           key: '7-1',
           label: <Link to="/forms/login">Login</Link>,
         },
