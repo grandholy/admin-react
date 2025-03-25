@@ -2,18 +2,8 @@ import { Sequelize } from 'sequelize';
 import fs from 'fs';
 import path from 'path';
 
-interface DbConfig {
-    dialect: string;
-    storage: string;
-    host?: string;
-    port?: number;
-    username?: string;
-    password?: string;
-    database?: string;
-}
-
 // Read database configuration from file or environment variables
-let dbConfig: DbConfig = {
+let dbConfig: any = {
   dialect: process.env.DB_DIALECT || 'sqlite',
   storage: process.env.DB_STORAGE || path.join(__dirname, '../../../data/database.sqlite'),
 };

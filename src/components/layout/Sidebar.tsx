@@ -13,6 +13,7 @@ import {
   ToolOutlined,
   MenuUnfoldOutlined,
   MenuFoldOutlined,
+  LikeOutlined,
 } from '@ant-design/icons';
 import { Link, useLocation } from 'react-router-dom';
 import { useTheme } from '../../contexts/ThemeContext';
@@ -94,6 +95,11 @@ const Sidebar: React.FC<SidebarProps> = ({ drawerVisible, setDrawerVisible }) =>
       key: '6',
       icon: <TableOutlined />,
       label: <Link to="/demo-table">Demo Table</Link>,
+    },
+    {
+      key: '6',
+      icon: <LikeOutlined />,
+      label: <Link to="/icons">Icons</Link>,
     },
     {
       key: '7',

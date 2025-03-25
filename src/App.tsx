@@ -29,6 +29,7 @@ import ServerErrorPage from './pages/utilities/ServerError';
 import ComingSoonPage from './pages/utilities/ComingSoon';
 
 import './App.css'; 
+import IconDisplay from './pages/icons/IconDisplay';
 
 const App: React.FC = () => {
   return (
@@ -56,6 +57,7 @@ const App: React.FC = () => {
               
               {/* Chart routes */}
               <Route path="charts" element={<ChartPage />} />
+              <Route path="icons" element={<IconDisplay />} />
               
               {/* Notification route */}
               <Route path="notifications" element={<NotificationDemo />} />
